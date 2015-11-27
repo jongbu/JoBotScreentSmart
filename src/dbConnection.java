@@ -36,8 +36,8 @@ public class dbConnection {
 	public void initialize() throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
 		connect = DriverManager.getConnection(
-				"jdbc:mysql://gator4105.hostgator.com/jongbu_jobot", "jongbu",
-				"computer1");
+				"",//you will to put your host name and user name here
+				"");//and your password
 		statement = connect.createStatement();
 	}
 
